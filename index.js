@@ -19,7 +19,7 @@ const captcha = path.resolve(__dirname, (imagePath || './src/images/captcha.png'
 
     await page.setUserAgent('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36');
 
-    await page.goto('https://wwwsn.bradescofinanciamentos.com.br/emissaoboletofi/emissaoBoletoEntrada.jsf', { waitUntil: 'networkidle2' });
+    await page.goto(Link of WebSite, { waitUntil: 'networkidle2' });
 
     const shoot = await page.waitForSelector('[id="boletoForm:imgCaptcha"]', { timeout: 2000 });
 
