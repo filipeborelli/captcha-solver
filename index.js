@@ -32,4 +32,6 @@ const captcha = path.resolve(__dirname, (imagePath || './src/images/captcha.png'
     await page.type('[name="boletoForm:nuCaptcha"]', result);
 
     await browser.close();
+
+    process.exit();
 })();
